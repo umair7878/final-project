@@ -1,0 +1,40 @@
+    .color-white{
+    color: #ffff;
+}
+.bg-icon{
+    border: none;
+    background-color: blue;
+}
+.boder-w{
+    border-color: #ffff !important;
+}
+.boder-radius{
+    border-radius:4px !important;
+}
+
+.sidebar-nav{
+    width: 270px;
+}
+
+@media (min-width:992px) {
+    body{
+        overflow: auto !important;
+    }
+    .offcanvas-backdrop{
+        display: none;
+        background-color:transparent !important;
+
+    }
+    .offcanvas-backdrop::before{
+        display: none ;
+    }
+    main{
+        margin-left: 270px;
+    }
+    .sidebar-nav{
+        transform: none;
+        visibility: visible !important;
+        top: 56px;
+        height: calc(100% - 56px);
+    }
+}

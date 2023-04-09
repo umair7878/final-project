@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- style boostrap-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="./css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <!-- offcanvas trigger button -->
+
+            <button class="btn btn-dark boder-w me-2 offcanvas-backdrop" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <i class="bi bi-border-style" data-bs-target="#offcanvasExample"></i>
+            </button>
+            <!-- offcanvas trigger button -->
+            <a class="navbar-brand me-auto" href="#">School Management System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+                <form class="d-flex ms-auto">
+                    <div class="input-group">
+                        <input type="text" class="form-control " placeholder="Search..."
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary bg-primary" type="button" id="button-addon2">
+                            <i class="bi bi-search color-white"></i>
+                        </button>
+                    </div>
+
+                </form>
+                <ul class="navbar-nav   mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-circle"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
+                            aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item active" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Account</a></li>
+                            <li><a class="dropdown-item" href="#">Setting</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Log out</a></li>
+                        </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- offcanvas -->
+
+ <div class="offcanvas offcanvas-start sidebar-nav bg-dark text-white" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="navbar-nav">
+            <div class="text-muted small fw-bold text-uppercase px-3">
+                Admin
+            </div>
+
+            <a href="./dashboard.html" target="_self" class="nav-link text-white px-4 active">
+              <span>
+                  <i class="bi bi-mortarboard px-2"></i>
+              </span>
+              <span>
+                Dashboard
+              </span>
+          </a>
+          <hr class="dropdown-divider">
+
+        </div>
+        <div class="text-muted small fw-bold text-uppercase px-3">
+            Student
+        </div>
+
+        <a href="./stud.html" class="nav-link text-white px-4 active">
+            <span>
+                <i class="bi bi-mortarboard px-2"></i>
+            </span>
+            <span>
+                Students Status
+            </span>
+        </a>
+        <a href="./stud.html" class="nav-link text-white px-4 active">
+            <span>
+              <i class="bi bi-cash-coin px-2"></i>
+            </span>
+            <span>
+                Students Fees
+            </span>
+        </a>
+        <a href="./stud.html" class="nav-link text-white px-4 active">
+            <span>
+              <i class="bi bi-bookmark-star-fill px-2"></i>
+            </span>
+            <span>
+                Students Attendence
+            </span>
+        </a>
+        <hr class="dropdown-divider">
+
+    </div>
+    </div>
+    <main class=" mt-5 pt-3 ">
+        <table class="table align-middle mb-0 bg-white">
+            <thead class="bg-light">
+              <tr>
+                <th>Name</th>
+                <th>Title</th>
+                <th>Status</th>
+                <th>Position</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <img
+                        src="https://mdbootstrap.com/img/new/avatars/1.jpg"
+                        alt=""
+                        style="width: 45px; height: 45px"
+                        class="rounded-circle"
+                        />
+                    <div class="ms-3">
+                      <p class="fw-bold mb-1">John Doe</p>
+                      <p class="text-muted mb-0">john.doe@gmail.com</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="fw-normal mb-1">Software engineer</p>
+                  <p class="text-muted mb-0">IT department</p>
+                </td>
+                <td>
+                  <span class="badge badge-success rounded-pill d-inline">Active</span>
+                </td>
+                <td>Senior</td>
+                <td>
+                  <button type="button" class="btn btn-link btn-sm btn-rounded">
+                    Edit
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <img
+                        src="https://mdbootstrap.com/img/new/avatars/2.jpg"
+                        alt=""
+                        style="width: 45px; height: 45px"
+                        class="rounded-circle"
+                        />
+                    <div class="ms-3">
+                      <p class="fw-bold mb-1">John Doe</p>
+                      <p class="text-muted mb-0">john.doe@gmail.com</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="fw-normal mb-1">Software engineer</p>
+                  <p class="text-muted mb-0">Devops Engineer</p>
+                </td>
+                <td>
+                  <span class="badge badge-success rounded-pill d-inline">Active</span>
+                </td>
+                <td>Senior</td>
+                <td>
+                  <button type="button" class="btn btn-link btn-sm btn-rounded">
+                    Edit
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <img
+                        src="https://mdbootstrap.com/img/new/avatars/22.jpg"
+                        alt=""
+                        style="width: 45px; height: 45px"
+                        class="rounded-circle"
+                        />
+                    <div class="ms-3">
+                      <p class="fw-bold mb-1">John Doe</p>
+                      <p class="text-muted mb-0">john.doe@gmail.com</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="fw-normal mb-1">Software engineer</p>
+                  <p class="text-muted mb-0">IT department</p>
+                </td>
+                <td>
+                  <span class="badge badge-success rounded-pill d-inline">Active</span>
+                </td>
+                <td>Senior</td>
+                <td>
+                  <button type="button" class="btn btn-link btn-sm btn-rounded">
+                    Edit
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <img
+                        src="https://mdbootstrap.com/img/new/avatars/3.jpg"
+                        alt=""
+                        style="width: 45px; height: 45px"
+                        class="rounded-circle"
+                        />
+                    <div class="ms-3">
+                      <p class="fw-bold mb-1">John Doe</p>
+                      <p class="text-muted mb-0">john.doe@gmail.com</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="fw-normal mb-1">Software engineer</p>
+                  <p class="text-muted mb-0">IT department</p>
+                </td>
+                <td>
+                  <span class="badge badge-success rounded-pill d-inline">Active</span>
+                </td>
+                <td>Senior</td>
+                <td>
+                  <button type="button" class="btn btn-link btn-sm btn-rounded">
+                    Edit
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <img
+                        src="https://mdbootstrap.com/img/new/avatars/2.jpg"
+                        class="rounded-circle"
+                        alt=""
+                        style="width: 45px; height: 45px"
+                        />
+                    <div class="ms-3">
+                      <p class="fw-bold mb-1">Alex Ray</p>
+                      <p class="text-muted mb-0">alex.ray@gmail.com</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="fw-normal mb-1">Consultant</p>
+                  <p class="text-muted mb-0">Finance</p>
+                </td>
+                <td>
+                  <span class="badge badge-primary rounded-pill d-inline"
+                        >Onboarding</span
+                    >
+                </td>
+                <td>Junior</td>
+                <td>
+                  <button
+                          type="button"
+                          class="btn btn-link btn-rounded btn-sm fw-bold"
+                          data-mdb-ripple-color="dark"
+                          >
+                    Edit
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <img
+                        src="https://mdbootstrap.com/img/new/avatars/25.jpg"
+                        class="rounded-circle"
+                        alt=""
+                        style="width: 45px; height: 45px"
+                        />
+                    <div class="ms-3">
+                      <p class="fw-bold mb-1">Kate Hunington</p>
+                      <p class="text-muted mb-0">kate.hunington@gmail.com</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="fw-normal mb-1">Designer</p>
+                  <p class="text-muted mb-0">UI/UX</p>
+                </td>
+                <td>
+                  <span class="badge badge-warning rounded-pill d-inline">Awaiting</span>
+                </td>
+                <td>Senior</td>
+                <td>
+                  <button
+                          type="button"
+                          class="btn btn-link btn-rounded btn-sm fw-bold"
+                          data-mdb-ripple-color="dark"
+                          >
+                    Edit
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </main>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js.map"></script>
+    <script src="./js/dataTables.bootstrap5.min.js"></script>
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js" ></script>
+    <script src="./js/chart.js"></script>
+    <script src="./js/das.js"></script>
+</body>
+
+</html>

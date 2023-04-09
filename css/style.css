@@ -1,0 +1,65 @@
+    .color-white{
+    color: #ffff;
+}
+.bg-icon{
+    border: none;
+    background-color: blue;
+}
+.boder-w{
+    border-color: #ffff !important;
+}
+.boder-radius{
+    border-radius:4px !important;
+}
+a{
+    text-decoration: none;
+    color: black !important;
+}
+.sidebar-nav{
+    width: 270px;
+}
+.carousel-inner{
+    width: 100%;
+    max-height: 75vh !important;
+}
+marquee{
+    width: 88%;
+    direction: left;
+    height: 30px;
+    background-color: #f01f1f;
+    color: #ffff;
+    
+}
+#signform{
+    display: none;
+    width: 50%;
+    background-color: salmon;
+}
+.marquee-item{
+    display: flex;
+    justify-content: center;
+    text-align: center  ;
+}
+
+@media (min-width:992px) {
+    body{
+        overflow: auto !important;
+    }
+    .offcanvas-backdrop{
+        display: none;
+        background-color:transparent !important;
+
+    }
+    .offcanvas-backdrop::before{
+        display: none ;
+    }
+    main{
+        margin-left: 270px;
+    }
+    .sidebar-nav{
+        transform: none;
+        visibility: visible !important;
+        top: 56px;
+        height: calc(100% - 56px);
+    }
+}
